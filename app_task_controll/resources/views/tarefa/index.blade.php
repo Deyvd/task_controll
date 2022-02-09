@@ -13,7 +13,9 @@
                             
                             <div class="col-6">
                                 <a class="float-right mr-3" href="{{route('tarefa.create')}}">Novo<a> 
-                                <a class="float-right mr-3" href="{{route('tarefa.export')}}">XLSX<a> 
+                                <a class="float-right mr-3" href="{{route('tarefa.export', ['extensao' => 'xlsx'])}}">XLSX<a> 
+                                <a class="float-right mr-3" href="{{route('tarefa.export', ['extensao' => 'csv'])}}">CSV<a> 
+                                <a class="float-right mr-3" href="{{route('tarefa.export', ['extensao' => 'pdf'])}}">PDF<a> 
                             </div>   
                     </div>
                 </div>
@@ -24,7 +26,7 @@
                             <tr>
                                 <th scope="col">ID</th>
                                 <th scope="col">Tarefa</th>
-                                <th scope="col">Data limete de Conclusão</th>
+                                <th scope="col">Data limite de Conclusão</th>
                                 <th></th>
                                 <th></th>
                             </tr>

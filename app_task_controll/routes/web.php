@@ -36,4 +36,4 @@ Route::get('mensagem-teste', function()
     // Mail::to('contato@turminhadamusica.com.br')->send(new MensagemTesteMail());
 });
 
-Route::get('tarefa-exportacao', [TarefaController::class, 'exportacao'])->name('tarefa.export');
+Route::get('tarefa-exportacao/{extensao}', [TarefaController::class, 'exportacao'])->name('tarefa.export');
