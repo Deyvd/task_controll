@@ -37,3 +37,4 @@ Route::get('mensagem-teste', function()
 });
 
 Route::get('tarefa-exportacao/{extensao}', [TarefaController::class, 'exportacao'])->name('tarefa.export');
+Route::get('tarefa-exportapdf', [TarefaController::class, 'export'])->name('tarefa.exportPDF');
